@@ -60,6 +60,17 @@ function ea_remove_wpseo_notifications() {
 add_action( 'init', 'ea_remove_wpseo_notifications' );
 
 /**
+ *  Move WPSEO Box Lower on Screen
+ * 
+ * @since 1.3.0
+ * 
+ */
+function yoasttobottom() {
+	return 'low';
+}
+add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
+
+/**
  * WPForms, default large field size
  *
  */

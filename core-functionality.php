@@ -15,7 +15,7 @@
  * FOR A PARTICULAR PURPOSE.
  *
  * @package    CoreFunctionality
- * @since      1.0.0
+ * @since      1.3.0
  * @copyright  Copyright (c) 2014, Bill Erickson & Jared Atchison
  * @license    GPL-2.0+
  */
@@ -23,6 +23,8 @@
 // Plugin directory
 define( 'EA_DIR' , plugin_dir_path( __FILE__ ) );
 
+require_once( EA_DIR . '/inc/debug.php' );
 require_once( EA_DIR . '/inc/general.php' );
+require_once( EA_DIR . '/inc/utility.php' );
 require_once( EA_DIR . '/inc/wordpress-cleanup.php' );
 require_once( EA_DIR . '/inc/kill-trackbacks.php' );
