@@ -76,6 +76,10 @@ class EA_Block_Area {
 	/**
 	 * Show block area
 	 *
+     * Usage:
+     * if( function_exists( 'ea_block_area' ) )
+     *       ea_block_area()->show( 'after-post' );
+     * 
 	 */
 	function show( $location = '' ) {
 		if( ! $location )
